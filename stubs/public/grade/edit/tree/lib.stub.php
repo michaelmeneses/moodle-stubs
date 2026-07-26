@@ -197,6 +197,13 @@ class grade_edit_tree_column_name extends grade_edit_tree_column
     public function get_header_cell()
     {
     }
+    /**
+     * Return category cell content
+     *
+     * @param grade_category $category
+     * @param string $levelclass
+     * @param array $params Parameters required to build the category cell content (must contain 'name', 'level' and 'eid' keys)
+     */
     public function get_category_cell($category, $levelclass, $params)
     {
     }

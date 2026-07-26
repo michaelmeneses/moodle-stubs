@@ -110,7 +110,7 @@ namespace core {
          */
         protected static $composerautoloadfiles = [
             // The AWS SDK always defines functions, even if they already exist.
-            'public/lib/aws-sdk/src/functions.php' => ['Aws\describe_region_info'],
+            'public/lib/aws-sdk/src/functions.php' => ['Aws\constantly'],
             // The following files check if functions have already been defined.
             'public/lib/guzzlehttp/guzzle/src/functions_include.php' => true,
             'public/lib/jmespath/src/JmesPath.php' => true,
