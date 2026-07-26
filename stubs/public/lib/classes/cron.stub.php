@@ -97,6 +97,10 @@ class cron
     /**
      * Execute all failed adhoc tasks.
      *
+     * This includes tasks that have exhausted their retry limits.
+     * It is intended for manual intervention from CLI or UI scripts,
+     * matching the behaviour of manually triggering individual failed tasks.
+     *
      * @param string|null  $classname Run only tasks of this class
      */
     public static function run_failed_adhoc_tasks(?string $classname = null): void
