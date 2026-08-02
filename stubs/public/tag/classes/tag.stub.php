@@ -51,6 +51,13 @@ class core_tag_tag
     const NOT_STANDARD_ONLY = -1;
     /** @var int option to hide standard tags when editing item tags */
     const HIDE_STANDARD = 2;
+    /**
+     * @var int batch size for chunking id lists passed to IN () clauses.
+     *
+     * Kept well under the database parameter limit (e.g. 65535 on PostgreSQL) so bulk tag
+     * deletions never exceed it. See MDL-87395.
+     */
+    const DELETE_CHUNK_SIZE = 1000;
     /** @var int|null tag context ID. */
     public $taginstancecontextid;
     /** @var int|null time modification. */
