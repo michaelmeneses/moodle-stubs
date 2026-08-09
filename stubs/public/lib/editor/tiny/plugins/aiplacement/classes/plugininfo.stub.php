@@ -22,7 +22,6 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_aiplacement;
 
-use aiplacement_editor\utils;
 use core\context;
 use core_ai\aiactions\generate_image;
 use core_ai\aiactions\generate_text;
@@ -72,6 +71,11 @@ class plugininfo extends plugin implements plugin_with_buttons, plugin_with_menu
     }
     /**
      * Get the allowed actions for the plugin.
+     *
+     * Available actions are discovered through the component-neutral core AI manager API rather
+     * than a direct call to a specific AI placement plugin. This lets any AI placement plugin
+     * offer actions through this editor entry point, and keeps this plugin working when a
+     * specific placement plugin, such as aiplacement_editor, is not installed.
      *
      * @param context $context The context that the editor is used within
      * @param array $options The options passed in when requesting the editor

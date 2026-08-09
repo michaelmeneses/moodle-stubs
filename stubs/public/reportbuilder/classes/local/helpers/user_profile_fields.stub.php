@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core\context\system;
 use core\lang_string;
 use core_text;
 use core_reportbuilder\local\filters\{boolean_select, date, select, text};
