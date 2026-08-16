@@ -79,8 +79,6 @@ class tool_uploadcourse_course
     protected $statuses = array();
     /** @var int update mode. Matches tool_uploadcourse_processor::UPDATE_* */
     protected $updatemode;
-    /** @var array Fields provided in the CSV that should not be overwritten from the template course. */
-    protected $skiptemplatefields = [];
     /** @var array fields allowed as course data. */
     protected static $validfields = array('fullname', 'shortname', 'idnumber', 'category', 'visible', 'startdate', 'enddate', 'summary', 'format', 'theme', 'lang', 'newsitems', 'showgrades', 'showreports', 'legacyfiles', 'maxbytes', 'groupmode', 'groupmodeforce', 'enablecompletion', 'downloadcontent', 'showactivitydates');
     /** @var array fields required on course creation. */

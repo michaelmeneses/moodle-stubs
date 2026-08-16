@@ -520,31 +520,6 @@ class restore_course_structure_step extends restore_structure_step
      * types of activity.
      */
     protected $legacyallowedmodules = array();
-    /** @var array|null Fields provided in the CSV that should not be overwritten from the template course. */
-    protected $skiptemplatefields = [];
-    /**
-     * Step constructor.
-     * @param string $name Step's name.
-     * @param string $filename Step's file name.
-     * @param restore_task|null $task Restore task.
-     * @param ?array $skiptemplatefields Course fields provided in the CSV that should not be overwritten by the template course.
-     * @throws restore_step_exception
-     */
-    public function __construct($name, $filename, $task = null, $skiptemplatefields = [])
-    {
-    }
-    /**
-     * Check whether the template course field should be restored.
-     *
-     * Fields explicitly provided in the CSV should not be overwritten by values
-     * from the template course.
-     *
-     * @param string $field the course field name to check.
-     * @return bool
-     */
-    protected function should_restore_template_field(string $field): bool
-    {
-    }
     protected function define_structure()
     {
     }

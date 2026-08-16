@@ -9,15 +9,3 @@
 function import_xml_grades($text, $course, &$error)
 {
 }
-/**
- * Download an XML grades file from a URL and import it into a course.
- *
- * @param stdClass $course target course
- * @param string $url source URL of the XML grades file
- * @param bool $feedback import feedback alongside grades
- * @param bool $verbose whether grade_import_commit prints progress
- * @return bool true if the grades were committed
- */
-function gradeimport_xml_fetch_and_commit(stdClass $course, string $url, bool $feedback, bool $verbose): bool
-{
-}

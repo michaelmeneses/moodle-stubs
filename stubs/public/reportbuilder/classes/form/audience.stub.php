@@ -9,7 +9,6 @@
 namespace core_reportbuilder\form;
 
 use context;
-use core\exception\invalid_parameter_exception;
 use core_form\dynamic_form;
 use core_reportbuilder\local\audiences\base;
 use core_reportbuilder\output\audience_heading_editable;
@@ -29,7 +28,6 @@ class audience extends dynamic_form
      * Audience we work with
      *
      * @return base
-     * @throws invalid_parameter_exception
      */
     protected function get_audience(): base
     {
