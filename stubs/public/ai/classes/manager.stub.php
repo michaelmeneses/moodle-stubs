@@ -66,6 +66,36 @@ class manager
     {
     }
     /**
+     * Get the enabled AI placements available in a context.
+     *
+     * @param \context $context The context.
+     * @return array An array of placement class names indexed by component name.
+     */
+    public static function get_placements_available_in_context(\context $context): array
+    {
+    }
+    /**
+     * Get all enabled AI placements.
+     *
+     * This is useful where a placement must be selected before a concrete
+     * context exists, for example while creating a course.
+     *
+     * @return array An array of placement class names indexed by component name.
+     */
+    public static function get_enabled_placements(): array
+    {
+    }
+    /**
+     * Get the available actions from all enabled AI placements.
+     *
+     * @param \context $context The context.
+     * @param bool $checkcontext Whether to check the action is available in the context.
+     * @return array The available actions.
+     */
+    public static function get_placement_actions_available(\context $context, bool $checkcontext = true): array
+    {
+    }
+    /**
      * Given a list of actions get the provider instances that support them.
      *
      * Will return an array of arrays, indexed by action name.

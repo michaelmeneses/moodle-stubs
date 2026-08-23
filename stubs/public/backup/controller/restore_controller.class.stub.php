@@ -67,6 +67,8 @@ class restore_controller extends base_controller
     /** @var restore_plan */
     protected $plan;
     // Restore execution plan
+    /** @var array|null Fields provided in the CSV that should not be overwritten from the template course. */
+    protected $skiptemplatefields = null;
     /**
      * Immediate/delayed execution type.
      * @var integer
@@ -100,8 +102,9 @@ class restore_controller extends base_controller
      * @param \core\progress\base $progress Optional progress monitor
      * @param \stdClass $copydata Course copy data, required when in MODE_COPY
      * @param bool $releasesession Should release the session? backup::RELEASESESSION_YES or backup::RELEASESESSION_NO
+     * @param ?array $skiptemplatefields Course fields to exclude when restoring from a template course.
      */
-    public function __construct($tempdir, $courseid, $interactive, $mode, $userid, $target, ?\core\progress\base $progress = null, $releasesession = backup::RELEASESESSION_NO, ?\stdClass $copydata = null)
+    public function __construct($tempdir, $courseid, $interactive, $mode, $userid, $target, ?\core\progress\base $progress = null, $releasesession = backup::RELEASESESSION_NO, ?\stdClass $copydata = null, $skiptemplatefields = null)
     {
     }
     /**
@@ -178,6 +181,13 @@ class restore_controller extends base_controller
     {
     }
     public function get_executiontime()
+    {
+    }
+    /**
+     * Returns fields that we want to skip importing
+     * @return array|null
+     */
+    public function get_skiptemplatefields(): ?array
     {
     }
     /**
