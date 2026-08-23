@@ -115,6 +115,8 @@ namespace core_table {
         /** @var string[] Columns that are expected to contain a users fullname.  */
         protected $userfullnamecolumns = ['fullname'];
         private $column_textsort = [];
+        /** @var array[] Attributes for each column header */
+        private $columnheadersattributes = [];
         /** @var array[] Attributes for each column  */
         private $columnsattributes = [];
         /** @var int The default per page size for the table. */
@@ -313,10 +315,17 @@ namespace core_table {
         {
         }
         /**
-         * Sets the given $attributes to $this->columnsattributes.
-         * Column attributes will be added to every cell in the column.
+         * Sets the given $attributes to $this->columnheadersattributes, which will be added to the header of the column
          *
-         * @param array[] $attributes e.g. ['c0_firstname' => ['data-foo' => 'bar']]
+         * @param array[] $attributes e.g. ['mycolumn' => ['class' => 'visually-hidden', 'data-foo' => 'bar']]
+         */
+        public function set_columnheadersattributes(array $attributes): void
+        {
+        }
+        /**
+         * Sets the given $attributes to $this->columnsattributes, which will be added to every cell in the column
+         *
+         * @param array[] $attributes e.g. ['mycolumn' => ['class' => 'font-italic', 'data-foo' => 'bar']]
          */
         public function set_columnsattributes(array $attributes): void
         {

@@ -29,6 +29,7 @@ use core_plugin_manager;
 use flexible_table;
 use html_writer;
 use mod_bigbluebuttonbn\extension;
+use mod_bigbluebuttonbn\plugininfo\bbbext;
 use moodle_url;
 use pix_icon;
 /**

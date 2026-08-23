@@ -80,6 +80,13 @@ class restore_plan extends base_plan implements loggable
     {
     }
     /**
+     * Returns fields that we want to skip importing
+     * @return array|null
+     */
+    public function get_skiptemplatefields(): ?array
+    {
+    }
+    /**
      * Gets the progress reporter, which can be used to report progress within
      * the backup or restore process.
      *
