@@ -35,12 +35,4 @@ class placement extends \core_ai\placement
     public static function get_action_list(): array
     {
     }
-    #[\Override]
-    public static function is_available_in_context(\context $context): bool
-    {
-    }
-    #[\Override]
-    public static function get_actions_available(\context $context, bool $checkcontext = true): array
-    {
-    }
 }
