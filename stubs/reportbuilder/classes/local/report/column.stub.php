@@ -57,8 +57,10 @@ final class column
     private $issortable = false;
     /** @var array $sortfields Fields to sort the column by */
     private $sortfields = [];
-    /** @var array $attributes */
-    private $attributes = [];
+    /** @var string[] $headerattributes Column header attributes */
+    private array $headerattributes = [];
+    /** @var string[] $attributes Column attributes */
+    private array $attributes = [];
     /** @var bool $available Used to know if column is available to the current user or not */
     private $available = true;
     /** @var bool $deprecated */
@@ -399,9 +401,30 @@ final class column
     {
     }
     /**
+     * Add column header attributes to be included in HTML when column is displayed
+     *
+     * See also {@see add_attributes} for adding attributes to the column itself
+     *
+     * @param string[] $attributes
+     * @return self
+     */
+    public function add_header_attributes(array $attributes): self
+    {
+    }
+    /**
+     * Returns the column header HTML attributes
+     *
+     * @return string[]
+     */
+    public function get_header_attributes(): array
+    {
+    }
+    /**
      * Add column attributes (data-, class, etc.) that will be included in HTML when column is displayed
      *
-     * @param array $attributes
+     * See also {@see add_header_attributes} for adding attributes to the column header
+     *
+     * @param string[] $attributes
      * @return self
      */
     public function add_attributes(array $attributes): self
@@ -410,7 +433,7 @@ final class column
     /**
      * Returns the column HTML attributes
      *
-     * @return array
+     * @return string[]
      */
     public function get_attributes(): array
     {
