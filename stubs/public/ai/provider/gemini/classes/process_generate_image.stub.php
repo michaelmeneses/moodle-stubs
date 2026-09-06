@@ -38,12 +38,64 @@ class process_generate_image extends abstract_processor
 {
     /** @var int The number of images to generate. */
     private int $numberimages = 1;
+    /**
+     * Whether the configured model speaks the Gemini native image generation
+     * protocol (generateContent), as opposed to the Imagen protocol (predict).
+     *
+     * This is determined from the configured endpoint's method, rather than the
+     * model name, so that it also works for a custom model name that isn't one
+     * of the known model classes: the endpoint is what actually decides which
+     * request/response schema Google expects, and admins configuring a custom
+     * model must already set it correctly for the request to work at all.
+     *
+     * @return bool
+     */
+    private function uses_gemini_image_protocol(): bool
+    {
+    }
     #[\Override]
     protected function create_request_object(string $userid): RequestInterface
     {
     }
+    /**
+     * Build the Imagen "predict" request body.
+     *
+     * @return \stdClass The request object.
+     */
+    private function create_imagen_request_object(): \stdClass
+    {
+    }
+    /**
+     * Build the Gemini native image "generateContent" request body.
+     *
+     * @return \stdClass The request object.
+     */
+    private function create_gemini_image_request_object(): \stdClass
+    {
+    }
     #[\Override]
     protected function handle_api_success(ResponseInterface $response): array
+    {
+    }
+    /**
+     * Handle a successful Imagen "predict" response.
+     *
+     * @param ResponseInterface $response The response object.
+     * @return array The response.
+     */
+    private function handle_imagen_api_success(ResponseInterface $response): array
+    {
+    }
+    /**
+     * Handle a successful Gemini native image "generateContent" response.
+     *
+     * Gemini can respond with HTTP 200 even when the prompt was rejected by
+     * safety filtering, so a missing image part is treated as an error here.
+     *
+     * @param ResponseInterface $response The response object.
+     * @return array The response.
+     */
+    private function handle_gemini_image_api_success(ResponseInterface $response): array
     {
     }
     /**
