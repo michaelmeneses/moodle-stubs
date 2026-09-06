@@ -96,7 +96,9 @@ class behat_partial_named_selector extends \Behat\Mink\Selector\PartialNamedSele
     .//div[
             contains(concat(' ', normalize-space(@class), ' '), ' modal-content ')
                 and
-            normalize-space(descendant::*[self::h4 or self::h5][contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')]) = %locator%
+            normalize-space(descendant::*[
+                self::h1 or self::h2 or self::h3 or self::h4 or self::h5 or self::h6
+            ][contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')]) = %locator%
         ]
             |
     .//div[
