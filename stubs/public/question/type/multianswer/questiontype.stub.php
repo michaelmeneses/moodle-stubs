@@ -60,7 +60,7 @@ class qtype_multianswer extends question_type
 // ANSWER_ALTERNATIVE regexes.
 define('ANSWER_ALTERNATIVE_FRACTION_REGEX', '=|%(-?[0-9]+(?:[.,][0-9]*)?)%');
 // For the syntax '(?<!' see http://www.perl.com/doc/manual/html/pod/perlre.html#item_C.
-define('ANSWER_ALTERNATIVE_ANSWER_REGEX', '.+?(?<!\\\\|&|&amp;)(?=[~#}]|$)');
+define('ANSWER_ALTERNATIVE_ANSWER_REGEX', '.+?(?<!\\\\)(?=[~}]|(?<!&)#|$)');
 define('ANSWER_ALTERNATIVE_FEEDBACK_REGEX', '.*?(?<!\\\\)(?=[~}]|$)');
 define('ANSWER_ALTERNATIVE_REGEX', null);
 // Parenthesis positions for ANSWER_ALTERNATIVE_REGEX.
@@ -99,7 +99,7 @@ define('ANSWER_REGEX_ALTERNATIVES', 16);
  * Initialise subquestion fields that are constant across all MULTICHOICE
  * types.
  *
- * @param objet $wrapped  The subquestion to initialise
+ * @param object $wrapped  The subquestion to initialise
  *
  */
 function qtype_multianswer_initialise_multichoice_subquestion($wrapped)
