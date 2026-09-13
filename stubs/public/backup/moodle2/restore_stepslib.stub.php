@@ -32,6 +32,13 @@ class restore_drop_and_clean_temp_stuff extends restore_execution_step
 class restore_gradebook_structure_step extends restore_structure_step
 {
     /**
+     * The first Moodle version on this branch containing the MDL-88407 fix.
+     *
+     * As the fix did not include a version bump on any branch, this is the exact weekly version the
+     * fix first shipped in.
+     */
+    const PENALTY_CALCULATION_BUG_VERSION = 2026042001.05;
+    /**
      * To conditionally decide if this step must be executed
      * Note the "settings" conditions are evaluated in the
      * corresponding task. Here we check for other conditions

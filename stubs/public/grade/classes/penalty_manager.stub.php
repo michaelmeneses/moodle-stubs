@@ -42,6 +42,24 @@ use stdClass;
 class penalty_manager
 {
     /**
+     * The freeze sentinel value stored in the `gradebook_calculations_freeze_<courseid>` config setting
+     * for courses that may be affected by the pre-MDL-88407 penalty calculation bug.
+     *
+     * A course is treated as needing the legacy penalty calculation while its stored freeze value is
+     * less than or equal to this constant.
+     */
+    const PENALTY_CALCULATION_FREEZE_VERSION = 20260808;
+    /**
+     * Whether a course's gradebook is currently frozen specifically for the pre-MDL-88407 penalty
+     * calculation bug.
+     *
+     * @param int $courseid The course id.
+     * @return bool
+     */
+    public static function is_frozen_for_legacy_penalty(int $courseid): bool
+    {
+    }
+    /**
      * List the modules that support the grade penalty feature.
      *
      * @return array list of supported modules.
@@ -157,6 +175,62 @@ class penalty_manager
      * @return float|null The adjusted grade, or null when rawgrade is null.
      */
     public static function apply_grade_item_factors(float $rawgrade, grade_item $gradeitem, ?grade_grade $usergrade = null): ?float
+    {
+    }
+    /**
+     * Fetches the authoritative raw grades for every user in an Assignment instance using
+     * Assignment's own get_user_grades() function.
+     *
+     * This is deliberately restricted to mod_assign. {$modname}_get_user_grades() is an internal
+     * convention followed by only a handful of core modules, not a formal inter-component contract.
+     * In particular, how an ungraded attempt is represented is module-specific and cannot safely be
+     * interpreted generically.
+     *
+     * @param grade_item $gradeitem The grade item whose module instance to query.
+     * @return array|null Grades indexed by userid, or null if this is not an Assignment grade item, or
+     *                     Assignment's get_user_grades() could not be found.
+     */
+    public static function get_authoritative_user_grades(grade_item $gradeitem): ?array
+    {
+    }
+    /**
+     * Whether a penalised grade should use the legacy pre-MDL-88407 calculation.
+     *
+     * A legacy calculation is used when the gradebook is frozen and the grade's stored rawgrade
+     * differs from Assignment's authoritative raw grade. Grades for ungraded latest attempts are
+     * not treated as legacy because there is no authoritative grade to compare against.
+     *
+     * A second check handles cases where the stored rawgrade matches the authoritative grade but the
+     * grade may still be affected by the legacy calculation. It recomputes finalgrade using the stored
+     * rawgrade and deductedmark with the fixed post-MDL-88407 formula, and considers the grade legacy
+     * if this differs from the stored finalgrade.
+     *
+     * If the authoritative grades cannot be obtained, the legacy calculation is used conservatively.
+     *
+     * @param grade_grade $grade The grade to check.
+     * @param array|null $authoritativegrades Assignment grades indexed by userid, or null if unavailable.
+     * @param grade_item $gradeitem The grade item, used to recompute the legacy and fixed finalgrade.
+     * @return bool
+     */
+    public static function requires_legacy_penalty_calculation(grade_grade $grade, ?array $authoritativegrades, grade_item $gradeitem): bool
+    {
+    }
+    /**
+     * Repairs rawgrade values left in the legacy representation by MDL-88407.
+     *
+     * A grade is repaired when:
+     * - it is an Assignment grade with a deducted mark and a non-null rawgrade;
+     * - its grade item is unlocked;
+     * - the grade itself is unlocked and not overridden;
+     * - Assignment's own current raw grade differs from the stored gradebook rawgrade.
+     *
+     * Assignment's own get_user_grades() function is used as the authoritative source for the current
+     * raw grade (see get_authoritative_user_grades() for why this is restricted to Assignment). Grades
+     * for ungraded attempts are skipped.
+     *
+     * @param int|null $courseid Specify a course ID to run this script on just one course.
+     */
+    public static function repair_penalised_rawgrade(?int $courseid = null): void
     {
     }
     /**
