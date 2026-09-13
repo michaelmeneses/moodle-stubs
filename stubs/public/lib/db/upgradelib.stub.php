@@ -57,6 +57,30 @@ function upgrade_calculated_grade_items($courseid = null)
 {
 }
 /**
+ * Freezes gradebook calculations for courses that may be affected by MDL-88407.
+ *
+ * Used during upgrade and course restore to prevent existing grades from being silently changed.
+ *
+ * Assignment grades are checked against the authoritative grade for the student's latest attempt,
+ * so a course is frozen when a penalised grade has an incorrect rawgrade. A second check recomputes
+ * finalgrade from the stored rawgrade and deductedmark using the fixed post-MDL-88407 formula, and
+ * freezes the course if that differs from the stored finalgrade.
+ *
+ * Other item types have no authoritative source to compare against, so any penalised grade
+ * conservatively freezes the course.
+ *
+ * Locked items and locked/overridden grades are excluded throughout: a regrade never touches them,
+ * so there is nothing for a freeze to protect against. The Assignment check also requires a
+ * value-type grade item and a non-null finalgrade, matching what
+ * penalty_manager::repair_penalised_rawgrade() requires to repair a row - freezing on a row that
+ * repair would never fix would leave it with a still-corrupted rawgrade once Accept forces a regrade.
+ *
+ * @param int|null $courseid Specify a course ID to run this script on just one course.
+ */
+function upgrade_penalty_calculation_freeze(?int $courseid = null)
+{
+}
+/**
  * This function creates a default separated/connected scale
  * so there's something in the database.
  *
