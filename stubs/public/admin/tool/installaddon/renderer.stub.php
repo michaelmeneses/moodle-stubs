@@ -104,7 +104,8 @@ class tool_installaddon_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Renders the widget for browsing the add-on repository
+     * Renders the widget for browsing Moodle Marketplace,
+     * or the alternative add-ons repository if one is defined.
      *
      * @return string
      */
