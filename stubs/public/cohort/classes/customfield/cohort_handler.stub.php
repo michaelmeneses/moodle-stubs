@@ -33,6 +33,8 @@ use core_customfield\field_controller;
  */
 class cohort_handler extends handler
 {
+    /** @var bool Whether to cache handler instances during the request. */
+    protected const CACHE_HANDLER_INSTANCES = true;
     /**
      * The current user can configure custom fields on this component.
      *

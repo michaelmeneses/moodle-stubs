@@ -53,13 +53,18 @@ class notification_list_processor implements templatable, renderable
      */
     protected $preferences;
     /**
+     * @var \stdClass The user these preferences belong to.
+     */
+    protected $user;
+    /**
      * Constructor.
      *
      * @param \stdClass $processor
      * @param \stdClass $provider
      * @param \stdClass $preferences
+     * @param \stdClass $user The user these preferences belong to.
      */
-    public function __construct($processor, $provider, $preferences)
+    public function __construct($processor, $provider, $preferences, $user)
     {
     }
     /**

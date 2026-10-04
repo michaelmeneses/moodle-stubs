@@ -421,6 +421,25 @@ namespace core\output\requirements {
         {
         }
         /**
+         * Returns modulepreload link tags for the import map's explicitly preloadable entries.
+         *
+         * A handful of foundational entries (react, react-dom and the design-system bundle) are
+         * already known up front from the import map itself, so preloading them lets the browser
+         * start those fetches in parallel with page parsing instead of waiting for import-graph
+         * discovery to reach them one level at a time.
+         *
+         * Which entries qualify is a closed allowlist maintained on the import_map entries
+         * themselves (see import_map::get_preload_specifiers()), not a filter over specifier name
+         * shape.
+         *
+         * @param import_map $importmap The import map instance the preload allowlist is read from.
+         * @param array $importmapdata The serialized import map data, as returned by import_map::jsonSerialize().
+         * @return string
+         */
+        protected function get_import_map_preload_links(import_map $importmap, array $importmapdata): string
+        {
+        }
+        /**
          * Returns the `<script>` tag used to load the React auto-init bundle for Mustache templates.
          *
          * This bundle scans the page for React placeholders rendered by Mustache and bootstraps
