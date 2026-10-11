@@ -301,14 +301,6 @@ namespace core\test {
         {
         }
         /**
-         * Get the path to the root of the package Moodle is installed in.
-         *
-         * @return bool|string
-         */
-        public static function get_package_root(): string
-        {
-        }
-        /**
          * Get the path to the Moodle root, relative to the root package.
          *
          * @return string

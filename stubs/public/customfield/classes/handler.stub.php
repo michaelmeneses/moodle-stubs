@@ -48,8 +48,6 @@ use stdClass;
  */
 abstract class handler
 {
-    /** @var bool Whether to cache handler instances during the request. */
-    protected const CACHE_HANDLER_INSTANCES = false;
     /** @var handler[] $instances */
     private static $instances = [];
     /**
@@ -84,7 +82,8 @@ abstract class handler
     /**
      * Returns an instance of the handler
      *
-     * Handlers may cache instances during the request by overriding {@see self::CACHE_HANDLER_INSTANCES}.
+     * We statically cache the list of instances during request lifecycle, to allow this method to be called
+     * repeatedly without potential performance problems
      *
      * @param int $itemid
      * @return static

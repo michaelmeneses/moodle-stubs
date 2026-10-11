@@ -395,6 +395,14 @@ namespace core\test\phpunit {
         protected static function get_framework()
         {
         }
+        /**
+         * Get the path to the root of the package Moodle is installed in.
+         *
+         * @return bool|string
+         */
+        protected static function get_package_root(): string
+        {
+        }
     }
 }
 namespace {
