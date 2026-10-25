@@ -34,11 +34,21 @@ class tool_installaddon_installer
     {
     }
     /**
-     * Returns URL to the repository that addons can be searched in and installed from
+     * Returns URL to the repository that addons can be searched in.
+     *
+     * Use an alternative add-ons repository if one is defined, otherwise Moodle Marketplace.
      *
      * @return moodle_url
      */
     public function get_addons_repository_url()
+    {
+    }
+    /**
+     * Is an alternative add-ons repository defined in config.php?
+     *
+     * @return bool
+     */
+    public function has_alternative_addons_repository(): bool
     {
     }
     /**
