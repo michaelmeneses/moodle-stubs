@@ -194,6 +194,20 @@ class api
     {
     }
     /**
+     * Whether the current user can access the content files (extracted or repackaged) for a given H5P content id.
+     *
+     * These are always stored in the system context, not the original package's, so check access against the
+     * original package instead.
+     *
+     * @param int $h5pid The id of the record in the {h5p} table (also the itemid used in the core_h5p content file area).
+     * @param \stdClass|null $h5p The {h5p} record for $h5pid, if already fetched by the caller, to avoid re-querying it.
+     *
+     * @return bool Whether the current user can access the content files for this H5P content id.
+     */
+    public static function can_access_content(int $h5pid, ?\stdClass $h5p = null): bool
+    {
+    }
+    /**
      * Get the pathnamehash from an H5P internal URL.
      *
      * @param  string $url H5P pluginfile URL poiting to an H5P file.
