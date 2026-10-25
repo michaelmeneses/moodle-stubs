@@ -42,6 +42,20 @@ function bigbluebuttonbn_supports($feature)
 {
 }
 /**
+ * Return the content items that can be added to a course.
+ *
+ * When the BBB server is not configured, the item is returned as disabled so the
+ * activity chooser shows it grayed-out with a role-appropriate tooltip.
+ *
+ * @param \core_course\local\entity\content_item $defaultitem
+ * @param \stdClass $user
+ * @param \stdClass $course
+ * @return \core_course\local\entity\content_item[]
+ */
+function bigbluebuttonbn_get_course_content_items(\core_course\local\entity\content_item $defaultitem, \stdClass $user, \stdClass $course): array
+{
+}
+/**
  * Given an object containing all the necessary data,
  * (defined by the form in mod_form.php) this function
  * will create a new instance and return the id number

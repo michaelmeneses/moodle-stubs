@@ -369,7 +369,8 @@ class core_admin_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Display a warning about not being registered on Moodle.org if necesary.
+     * Display a warning if the site is not registered on Moodle.org, or is registered but has
+     * stopped sending registration updates.
      *
      * @param boolean $registered true if the site is registered on Moodle.org
      * @return string HTML to output.
@@ -378,7 +379,8 @@ class core_admin_renderer extends plugin_renderer_base
     {
     }
     /**
-     * Return an admin page warning if site is not registered with moodle.org
+     * Return an admin page warning if the site is not registered with moodle.org, or is registered
+     * but has stopped sending registration updates.
      *
      * @return string
      */

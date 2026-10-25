@@ -34,6 +34,10 @@ namespace filter_codehighlighter;
 class text_filter extends \core_filters\text_filter
 {
     #[\Override]
+    public function setup($page, $context)
+    {
+    }
+    #[\Override]
     public function filter($text, array $options = []): string
     {
     }
