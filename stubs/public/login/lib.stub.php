@@ -39,6 +39,10 @@ function core_login_process_password_set($token)
 {
 }
 /** Create a new record in the database to track a new password set request for user.
+ *
+ * Any existing outstanding password reset tokens for this user are removed first, so only the
+ * newly generated token remains valid.
+ *
  * @param object $user the user record, the requester would like a new password set for.
  * @return record created.
  */

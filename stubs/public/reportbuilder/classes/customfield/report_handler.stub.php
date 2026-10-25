@@ -24,6 +24,8 @@ use core_reportbuilder\permission;
  */
 class report_handler extends \core_customfield\handler
 {
+    /** @var bool Whether to cache handler instances during the request. */
+    protected const CACHE_HANDLER_INSTANCES = true;
     /**
      * The current user can configure custom fields on this component.
      *

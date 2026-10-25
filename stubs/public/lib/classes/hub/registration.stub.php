@@ -35,6 +35,7 @@ use context_system;
 use stdClass;
 use html_writer;
 use core_plugin_manager;
+use core\output\notification;
 /**
  * Methods to use when registering the site at the moodle sites directory.
  *
@@ -48,8 +49,9 @@ class registration
      * IMPORTANT: any new fields with non-empty defaults have to be added to CONFIRM_NEW_FIELDS */
     const FORM_FIELDS = ['policyagreed', 'language', 'countrycode', 'privacy', 'contactemail', 'emailalert', 'emailalertemail', 'commnews', 'commnewsemail', 'contactname', 'name', 'description', 'imageurl', 'contactphone', 'regioncode', 'geolocation', 'street', 'organisationtype', 'commnewsfirstname', 'commnewslastname'];
     /** @var array List of new FORM_FIELDS or siteinfo fields added indexed by the version when they were added.
-     * If site was already registered, admin will be promted to confirm new registration data manually. Until registration is manually confirmed,
-     * the scheduled task updating registration will be paused.
+     * If site was already registered, admin will be promted to confirm new registration data manually. Until
+     * registration is manually confirmed, the scheduled task updating registration will continue to run but will
+     * omit these fields from the payload, sending only the previously confirmed field set.
      * Keys of this array are not important as long as they increment, use current date to avoid confusions.
      */
     const CONFIRM_NEW_FIELDS = [
@@ -76,6 +78,10 @@ class registration
         // Default homepage added in Moodle 5.2.
         2026012200 => ['defaulthomepage'],
     ];
+    /** @var string Registration reporting is paused because new registration fields need manual confirmation */
+    public const REPORTING_PAUSED_NEW_FIELDS = 'newfields';
+    /** @var string Registration reporting is paused because the registration cron task is disabled */
+    public const REPORTING_PAUSED_TASK_DISABLED = 'taskdisabled';
     /** @var string Site privacy: not displayed */
     const HUB_SITENOTPUBLISHED = 'notdisplayed';
     /** @var string Site privacy: public */
@@ -140,9 +146,12 @@ class registration
      * Calculates and prepares site information to send to the sites directory as a part of registration.
      *
      * @param array $defaults default values for inputs in the registration form (if site was never registered before)
+     * @param array $excludefields siteinfo keys to omit from the payload, typically the result of
+     *        {@see self::get_new_registration_fields()}, so the payload only contains data the admin has
+     *        already confirmed sending
      * @return array site info
      */
-    public static function get_site_info($defaults = [])
+    public static function get_site_info($defaults = [], array $excludefields = [])
     {
     }
     /**
@@ -171,6 +180,10 @@ class registration
     /**
      * Updates site registration via cron
      *
+     * If there are registration fields awaiting admin confirmation, the update still proceeds but the
+     * payload is filtered down to the previously confirmed field set so already-agreed data keeps flowing
+     * while the new fields remain withheld until the admin confirms them.
+     *
      * @throws moodle_exception
      */
     public static function update_cron()
@@ -182,9 +195,10 @@ class registration
      * @param string $token
      * @param string $newtoken
      * @param string $hubname
+     * @return bool true if the full site info reached the hub, false if a retry was queued instead
      * @throws moodle_exception
      */
-    public static function confirm_registration($token, $newtoken, $hubname)
+    public static function confirm_registration($token, $newtoken, $hubname): bool
     {
     }
     /**
@@ -216,6 +230,25 @@ class registration
      * @throws \coding_exception
      */
     public static function register($returnurl)
+    {
+    }
+    /**
+     * Builds the redirect URL used to hand the initial registration off to the hub.
+     *
+     * This deliberately carries only a small, fixed subset of the site info: the token and site
+     * URL are what the hub matches the incoming request to the unconfirmed registration record
+     * on, and policyagreed/contactemail/language are required by the hub's own initial
+     * registration processing (consent, and enough contact detail to act on it). Everything else
+     * - the bulk of the payload, including fields like pluginusage that can be large on their
+     * own - is sent unconditionally, immediately after confirmation, by confirm_registration().
+     * There is no need to also try to fit it into the redirect URL. Kept as a separate method so
+     * the URL construction can be unit tested without going through {@see redirect()}.
+     *
+     * @param string $token
+     * @param array $siteinfo result of get_site_info()
+     * @return moodle_url
+     */
+    protected static function get_registration_redirect_url(string $token, array $siteinfo): moodle_url
     {
     }
     /**
@@ -282,11 +315,66 @@ class registration
     /**
      * Returns the list of the fields in the registration form that were added since registration or last manual update
      *
-     * If this list is not empty the scheduled task will be paused and admin will be reminded to update registration manually.
+     * If this list is not empty, the scheduled task will omit these fields from the registration payload and the
+     * admin will be reminded to update registration manually to confirm and resume sending them.
      *
      * @return array
      */
     public static function get_new_registration_fields()
+    {
+    }
+    /**
+     * Returns why a registered site has stopped sending registration updates, if at all.
+     *
+     * A registered site can stop reporting either because new registration fields are awaiting manual
+     * confirmation, or because the {@see \core\task\registration_cron_task} scheduled task has been disabled.
+     * Both cases leave the site reporting as "registered" with no other indication that updates have stopped.
+     *
+     * When both causes apply at once, the new-fields cause is reported: it is the one the admin is redirected
+     * to resolve by {@see self::registration_reminder()}, and once confirmed the next call reports the
+     * task-disabled cause instead.
+     *
+     * Sites that are not publicly accessible are never reported as paused: {@see \core\task\registration_cron_task}
+     * only sends updates when site_is_public(), and {@see self::registration_reminder()} and the unregistered
+     * warning are gated the same way, so such a site is deliberately not nagged about paused reporting.
+     *
+     * @return string one of the self::REPORTING_PAUSED_* constants, or '' if the site is not registered, is not
+     *     public, or is reporting normally
+     */
+    public static function get_reporting_paused_reason(): string
+    {
+    }
+    /**
+     * Determines the status notification to display on the registration page.
+     *
+     * Split out from admin/registration/index.php so this branch selection can be unit tested on its own.
+     * The page itself additionally gates $siteisregistered on \core\hub\api::is_site_registered_in_hub(),
+     * a live request to the moodle.org hub that cannot be exercised in a test environment; this method
+     * covers everything downstream of that check.
+     *
+     * @param bool $siteisregistered whether the site is registered locally and confirmed at the hub
+     * @param bool $isinitialregistration whether this is a first-time/pending initial registration
+     * @return array{message: string, type: string} notification message and \core\output\notification type,
+     *     or an empty message when nothing should be displayed
+     */
+    public static function get_registration_page_notification(bool $siteisregistered, bool $isinitialregistration): array
+    {
+    }
+    /**
+     * Checks whether registration reporting has stopped since the last check and, if so, notifies site admins.
+     *
+     * Intended to be called periodically (see {@see \core\task\registration_reporting_check_task}) so the
+     * paused state is surfaced even if no administrator happens to visit a page that checks it directly.
+     */
+    public static function check_reporting_paused_notification(): void
+    {
+    }
+    /**
+     * Sends the registration-reporting-paused notification to all site admins.
+     *
+     * @param string $reason one of the self::REPORTING_PAUSED_* constants
+     */
+    protected static function send_reporting_paused_notification(string $reason): void
     {
     }
     /**

@@ -320,7 +320,10 @@ class completion_info
      *   COMPLETION_UNKNOWN significantly improves performance because it will abandon
      *   processing early if the user's completion state already matches the expected
      *   result. For manual events, COMPLETION_COMPLETE or COMPLETION_INCOMPLETE
-     *   must be used; these directly set the specified state.
+     *   must be used; these directly set the specified state. When overriding,
+     *   COMPLETION_COMPLETE_PASS may also be used to directly set that state. Once overridden to
+     *   COMPLETE or COMPLETE_PASS, later non-override calls (e.g. a grade changing) may still move
+     *   the state between those two, but will never move it back to INCOMPLETE or COMPLETE_FAIL.
      * @param int $userid User ID to be updated. Default 0 = current user
      * @param bool $override Whether manually overriding the existing completion state.
      * @param bool $isbulkupdate If bulk grade update is happening.

@@ -1981,6 +1981,26 @@ class assign
     {
     }
     /**
+     * Determine if this user's grade/mark value is read-only because it is ready for release, or
+     * already released.
+     *
+     * @param int $userid The student userid
+     * @return bool
+     */
+    public function grading_locked(int $userid): bool
+    {
+    }
+    /**
+     * Determine if the given workflow state means the grade/mark value is read-only, because it is
+     * ready for release, or already released.
+     *
+     * @param string|null $workflowstate The overall grade workflow state.
+     * @return bool
+     */
+    public function workflow_state_locked(?string $workflowstate): bool
+    {
+    }
+    /**
      * Get an instance of a grading form if advanced grading is enabled.
      * This is specific to the assignment, marker and student.
      *

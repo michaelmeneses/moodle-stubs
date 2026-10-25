@@ -33,6 +33,8 @@ use core_customfield\field_controller;
  */
 class content_handler extends \core_customfield\handler
 {
+    /** @var bool Whether to cache handler instances during the request. */
+    protected const CACHE_HANDLER_INSTANCES = true;
     /**
      * @var \context
      */
