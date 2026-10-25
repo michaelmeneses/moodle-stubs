@@ -140,6 +140,54 @@ class api_token_repository
     {
     }
     /**
+     * Get the tokens whose owners are due a reminder that they are about to expire.
+     *
+     * @param int|null $userid Only this owner's tokens, or everyone's if null.
+     * @return api_token_entity[]
+     */
+    public function get_tokens_to_warn(?int $userid = null): array
+    {
+    }
+    /**
+     * Get the recently expired tokens whose owners have not been told.
+     *
+     * @param int|null $userid Only this owner's tokens, or everyone's if null.
+     * @return api_token_entity[]
+     */
+    public function get_expired_tokens_to_notify(?int $userid = null): array
+    {
+    }
+    /**
+     * Record that a token's owner has just been reminded it is about to expire.
+     *
+     * @param int $tokenid The token ID.
+     * @return void
+     */
+    public function mark_expiry_warned(int $tokenid): void
+    {
+    }
+    /**
+     * Record that a token's owner has been told it has expired.
+     *
+     * @param int $tokenid The token ID.
+     * @return void
+     */
+    public function mark_expired_notified(int $tokenid): void
+    {
+    }
+    /**
+     * Get the tokens matching a WHERE clause, optionally for one owner only.
+     *
+     * @param string $select The WHERE clause.
+     * @param array $params The clause's parameters.
+     * @param int|null $userid Only this owner's tokens, or everyone's if null.
+     * @param string $sort The ORDER BY clause.
+     * @return api_token_entity[]
+     */
+    protected function get_tokens_select(string $select, array $params, ?int $userid = null, string $sort = 'id'): array
+    {
+    }
+    /**
      * Pre-hash the secret and its appended checksum.
      *
      * The default password_hash() algorithm is bcrypt, which silently truncates its input to 72 bytes. Our

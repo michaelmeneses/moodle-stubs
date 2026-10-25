@@ -72,6 +72,10 @@ class client_manager
                  SELECT identifier
                    FROM {oauth2_server_client_access_tokens}
                   WHERE clientidentifier = :clientidentifier)';
+    /** @var string The config log name for changes to a client and its redirect URIs. */
+    protected const string CONFIG_LOG_CLIENT = 'oauth2serverclient';
+    /** @var string The config log name for changes to a client secret. */
+    protected const string CONFIG_LOG_SECRET = 'oauth2serverclientsecret';
     /**
      * Constructor.
      *
@@ -200,6 +204,15 @@ class client_manager
     {
     }
     /**
+     * Queue a notice of a new secret to each person who can manage OAuth 2 clients.
+     *
+     * @param array $notice The task custom data describing the secret.
+     * @return void
+     */
+    protected function queue_secret_created_notices(array $notice): void
+    {
+    }
+    /**
      * Get the secrets belonging to a client.
      *
      * @param int $clientid The client ID.
@@ -289,6 +302,36 @@ class client_manager
      * @throws \dml_missing_record_exception If the client does not exist.
      */
     protected function get_client_record(int $clientid): \stdClass
+    {
+    }
+    /**
+     * Describe a client and its redirect URIs for the config log.
+     *
+     * @param \stdClass $client The client record.
+     * @param string[]|null $uris The client's redirect URIs, if already known. Read from the database if null.
+     * @return string The client state, as JSON.
+     */
+    protected function get_client_snapshot(\stdClass $client, ?array $uris = null): string
+    {
+    }
+    /**
+     * Describe a client secret for the config log, leaving out the secret hash.
+     *
+     * @param \stdClass $secret The secret record.
+     * @return string The secret state, as JSON.
+     */
+    protected function get_secret_snapshot(\stdClass $secret): string
+    {
+    }
+    /**
+     * Record a change in the config log, unless nothing actually changed.
+     *
+     * @param string $name The config log name.
+     * @param string|null $oldvalue The state before the change, or null if it was created.
+     * @param string|null $newvalue The state after the change, or null if it was deleted.
+     * @return void
+     */
+    protected function log_change(string $name, ?string $oldvalue, ?string $newvalue): void
     {
     }
     /**

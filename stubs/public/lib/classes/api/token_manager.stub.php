@@ -53,6 +53,12 @@ class token_manager
     // means "sooner than you chose" rather than sitting there from the moment it is created.
     /** @var int How close to expiry a token is flagged as expiring soon, in days. */
     public const int EXPIRY_IMMINENT_DAYS = 3;
+    /** @var int[] How long before a token expires its owner is reminded, in days. */
+    public const array REMINDER_DAYS = [30, 7, 1];
+    // A notice months after the fact, sent once an unreachable owner becomes reachable again,
+    // would only confuse them.
+    /** @var int For how long after a token expires its owner may still be told so, in days. */
+    public const int EXPIRED_NOTICE_DAYS = 7;
     /**
      * The number of bytes used to generate the secret.
      *
@@ -107,6 +113,17 @@ class token_manager
      * @return bool
      */
     public static function is_expiring_soon(?int $expirytime): bool
+    {
+    }
+    /**
+     * Whether a token's owner is due a reminder that it is about to expire.
+     *
+     * @param int $timecreated When the token was created.
+     * @param int $expirytime When the token expires.
+     * @param int|null $lastreminded When the owner was last reminded, or null if never.
+     * @return bool
+     */
+    public static function is_reminder_due(int $timecreated, int $expirytime, ?int $lastreminded): bool
     {
     }
     /**

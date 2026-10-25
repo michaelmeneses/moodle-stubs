@@ -108,6 +108,9 @@ class password
      * Updating the password will modify the $user object and the database record to use the
      * current hashing algorithm. It will remove Web Services user tokens too.
      *
+     * If the password itself has actually changed (not just a rehash to the current algorithm),
+     * any outstanding forgot-password tokens for the user are also invalidated.
+     *
      * @param \stdClass $user User object (password property may be updated)
      * @param string|null $password Plain text password
      * @param bool $fasthash If true, use a low cost factor when generating the hash

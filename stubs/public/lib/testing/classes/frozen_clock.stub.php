@@ -36,8 +36,9 @@ class frozen_clock implements \core\clock
      * Create a new instance of the frozen clock.
      *
      * @param null|int $time The initial time to use. If not specified, the current time is used.
+     * @param null|DateTimeImmutable $datetime The initial datetime to use. Takes precedence over $time.
      */
-    public function __construct(?int $time = null)
+    public function __construct(?int $time = null, ?DateTimeImmutable $datetime = null)
     {
     }
     public function now(): \DateTimeImmutable

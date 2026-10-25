@@ -23,6 +23,7 @@
 namespace core\router\middleware;
 
 use core\api\token_manager;
+use core\exception\insufficient_scope_exception;
 use core\router\exception\oauth_server_exception;
 use core\router\route;
 use core\router\scope\scopeset;

@@ -9,10 +9,10 @@
 function algebra2tex($algebra)
 {
 }
-function refineTeX($texexp)
+function refinetex($texexp)
 {
 }
-function outputText($texexp)
+function outputtext($texexp)
 {
 }
 function tex2image($texexp, $md5, $return = false)

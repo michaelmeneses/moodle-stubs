@@ -14,6 +14,7 @@ use core\clock;
 use core\di;
 use core\url;
 use core\output\help_icon;
+use core\output\html_writer;
 use core_reportbuilder\local\entities\base;
 use core_reportbuilder\local\filters\{date, select, text};
 use core_reportbuilder\local\helpers\database;

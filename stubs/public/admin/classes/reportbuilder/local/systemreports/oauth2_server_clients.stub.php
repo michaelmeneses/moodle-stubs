@@ -23,6 +23,7 @@
 namespace core_admin\reportbuilder\local\systemreports;
 
 use core\oauth2\server\entity\client_entity;
+use core\oauth2\server\expiry_helper;
 use core\output\help_icon;
 use core_admin\route\controller\oauth2\server\client_management;
 use core_reportbuilder\local\report\column;

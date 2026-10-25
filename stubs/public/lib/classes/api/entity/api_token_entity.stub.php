@@ -57,6 +57,8 @@ class api_token_entity
     protected int $timecreated;
     /** @var int|null The timestamp when the token was last accessed. */
     protected ?int $lastaccessed;
+    /** @var int|null When the owner was last reminded that the token is about to expire. */
+    protected ?int $timeexpirywarned;
     /**
      * Create an API token entity from a database record.
      *
@@ -144,6 +146,14 @@ class api_token_entity
      * @return int|null
      */
     public function get_lastaccessed(): ?int
+    {
+    }
+    /**
+     * Get when the owner was last reminded that the token is about to expire.
+     *
+     * @return int|null
+     */
+    public function get_timeexpirywarned(): ?int
     {
     }
     /**

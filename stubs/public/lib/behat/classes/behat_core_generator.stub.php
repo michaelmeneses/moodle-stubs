@@ -88,6 +88,15 @@ class behat_core_generator extends behat_generator_base
     {
     }
     /**
+     * Create a personal access token, minted as the token page does.
+     *
+     * @param array $data The token's owner, name, expiry and optionally space-separated scopes.
+     * @return void
+     */
+    protected function process_personal_access_token(array $data): void
+    {
+    }
+    /**
      * Creates language customisation.
      *
      * @throws Exception

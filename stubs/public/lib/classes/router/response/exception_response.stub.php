@@ -89,4 +89,23 @@ abstract class exception_response extends \core\router\schema\response\response 
     protected static function get_payload_data(\Exception $exception, ...$extra): array
     {
     }
+    /**
+     * Add additional headers to the response.
+     *
+     * @param \Psr\Http\Message\ResponseInterface $response
+     * @param \Exception $exception
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    protected static function add_additional_headers(\Psr\Http\Message\ResponseInterface $response, \Exception $exception): \Psr\Http\Message\ResponseInterface
+    {
+    }
+    /**
+     * Get any headers to add to the response.
+     *
+     * @param \Exception $exception The exception for which to get additional headers.
+     * @return array<string,string>
+     */
+    protected static function get_additional_headers(\Exception $exception): array
+    {
+    }
 }

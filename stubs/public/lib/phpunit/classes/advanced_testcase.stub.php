@@ -412,6 +412,15 @@ abstract class advanced_testcase extends base_testcase
     {
     }
     /**
+     * Mock the clock with a frozen clock set to a specific datetime.
+     *
+     * @param \DateTimeImmutable $datetime
+     * @return \frozen_clock
+     */
+    public function mock_clock_with_frozen_datetime(\DateTimeImmutable $datetime): \frozen_clock
+    {
+    }
+    /**
      * Add a mocked plugintype to Moodle.
      *
      * A new plugintype name must be provided with a path to the plugintype's root.

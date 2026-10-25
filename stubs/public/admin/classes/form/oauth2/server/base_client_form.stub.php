@@ -55,6 +55,18 @@ abstract class base_client_form extends moodleform
      */
     protected const string SCOPES_FIELDSET_ID = 'id_scopesfieldset';
     /**
+     * Classes applied to the scopes fieldset when it carries a validation error.
+     *
+     * Bootstrap's own error styling (the Name field's red box) is a `.is-invalid` class, but that
+     * class only paints a border on `.form-control`/`.form-select` elements, not on a plain
+     * fieldset. These border utility classes are already compiled into Boost's CSS, so they give
+     * the fieldset the same kind of persistent, deliberate error box without a new stylesheet
+     * rule, and independent of any browser's own (and differently coloured) focus ring.
+     *
+     * @var string
+     */
+    protected const string SCOPES_FIELDSET_ERROR_CLASS = 'border border-danger rounded p-2 mb-2';
+    /**
      * The "Scopes" label text, including its required-field marker.
      *
      * Shared by the static label row and the fieldset's legend, so both read the same thing.
@@ -161,10 +173,11 @@ abstract class base_client_form extends moodleform
      * Build the scopes fieldset's opening tag and its legend.
      *
      * @param bool $invalid Whether the scopes error is present, so the fieldset should be
-     *                       exposed as invalid and take focus once the page renders.
+     *                      exposed as invalid once the page renders.
+     * @param bool $hasautofocus Whether autofocus should be set on the scopes fieldset.
      * @return string
      */
-    protected function get_scopes_fieldset_open(bool $invalid): string
+    protected function get_scopes_fieldset_open(bool $invalid, bool $hasautofocus = false): string
     {
     }
     /**
