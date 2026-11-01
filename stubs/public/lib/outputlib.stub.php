@@ -127,6 +127,21 @@ function theme_build_css_for_themes($themeconfigs = [], $directions = ['rtl', 'l
 {
 }
 /**
+ * Generates and caches the editor content CSS for the given theme configs.
+ *
+ * Unlike {@see theme_build_css_for_themes()} this does not change the theme revisions, so it can be run after the main CSS
+ * has been built without invalidating it.
+ *
+ * @param theme_config[] $themeconfigs An array of theme_config instances.
+ * @param array $directions Must be a subset of ['rtl', 'ltr'].
+ * @param bool $cache Should the generated CSS be cached.
+ * @param bool $mtraceprogress Should progress be traced.
+ * @return array The built editor CSS as an array of themename => direction => css.
+ */
+function theme_build_editor_css_for_themes(array $themeconfigs = [], array $directions = ['rtl', 'ltr'], bool $cache = true, bool $mtraceprogress = false): array
+{
+}
+/**
  * Invalidate all server and client side caches.
  *
  * This method deletes the physical directory that is used to cache the theme
