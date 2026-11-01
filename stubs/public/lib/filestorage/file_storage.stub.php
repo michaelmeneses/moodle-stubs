@@ -24,6 +24,8 @@ use core_files\hook\before_file_created;
  */
 class file_storage
 {
+    /** @var int Maximum number of characters supported by the files.filename column. */
+    public const MAX_FILENAME_LENGTH = 255;
     /** @var string tempdir */
     private $tempdir;
     /** @var file_system filesystem */

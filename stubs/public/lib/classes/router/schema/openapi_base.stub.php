@@ -36,6 +36,8 @@ use stdClass;
  */
 abstract class openapi_base
 {
+    /** @var null|string Suffix which distinguishes a customised instance from the default component of the same class */
+    private ?string $referencesuffix = null;
     /**
      * Base constructor which does nothing.
      *
@@ -55,6 +57,58 @@ abstract class openapi_base
      * @return string
      */
     public function get_reference(bool $qualify = true): string
+    {
+    }
+    /**
+     * Get the suffix which distinguishes a customised instance from the default component of the same class.
+     *
+     * The suffix is derived from the state of the instance, so names do not depend on the order in which instances
+     * are encountered, nor on the specification or path they are used in. It is calculated once per instance.
+     *
+     * @return string
+     */
+    private function get_reference_suffix(): string
+    {
+    }
+    /**
+     * Get a short hash of the state of an object.
+     *
+     * The reference suffix of the object, and of any nested object, is excluded so the result does not depend on whether
+     * a reference has already been requested for them.
+     *
+     * @param object $object
+     * @return string
+     */
+    private static function get_state_hash(object $object): string
+    {
+    }
+    /**
+     * Get the state of an object, including inherited and private properties, in a form suitable for hashing.
+     *
+     * An array cast exposes every property, with private and protected names mangled by their declaring class.
+     *
+     * @param object $object
+     * @return array
+     */
+    private static function get_state(object $object): array
+    {
+    }
+    /**
+     * Describe a closure by its location so that different closures do not hash identically.
+     *
+     * @param \Closure $closure
+     * @return string
+     */
+    private static function describe_closure(\Closure $closure): string
+    {
+    }
+    /**
+     * Normalise a value so that it can be encoded deterministically.
+     *
+     * @param mixed $value
+     * @return mixed
+     */
+    private static function normalise_value(mixed $value): mixed
     {
     }
     /**

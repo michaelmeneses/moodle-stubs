@@ -1842,6 +1842,18 @@ namespace core\output {
         {
         }
         /**
+         * Wraps a JS snippet in an IIFE that removes its own script element from the DOM after executing.
+         *
+         * Use this for inline scripts emitted repeatedly (e.g. progress bar updates, streaming
+         * replacements) to prevent DOM node accumulation during long-running pages.
+         *
+         * @param string $js The JS snippet to wrap.
+         * @return string HTML script element.
+         */
+        protected function script_self_removing(string $js): string
+        {
+        }
+        /**
          * Renders a progress bar.
          *
          * Do not use $OUTPUT->render($bar), instead use progress_bar::create().
