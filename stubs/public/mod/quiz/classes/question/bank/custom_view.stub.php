@@ -37,6 +37,7 @@ use core_question\local\bank\condition;
 use core_question\local\bank\column_manager_base;
 use core_question\local\bank\filter_condition_manager;
 use core_question\local\bank\question_version_status;
+use mod_quiz\quiz_settings;
 /**
  * Subclass to customise the view of the question bank for the quiz editing screen.
  *

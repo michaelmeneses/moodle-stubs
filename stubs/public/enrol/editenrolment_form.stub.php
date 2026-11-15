@@ -33,6 +33,14 @@ class enrol_user_enrolment_form extends moodleform
     function definition()
     {
     }
+    /**
+     * Return the submitted data, discarding an unchanged period when the end date is disabled.
+     *
+     * @return stdClass|null submitted data, or null when the form was not submitted or did not validate
+     */
+    public function get_data()
+    {
+    }
     function validation($data, $files)
     {
     }

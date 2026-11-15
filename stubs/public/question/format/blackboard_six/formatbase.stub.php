@@ -78,6 +78,19 @@ class qformat_blackboard_six_base extends qformat_based_on_xml
     {
     }
     /**
+     * Check that a file referenced from imported content resolves to a readable
+     * regular file inside the import's file base directory.
+     *
+     * Prevents path traversal (e.g. "../../config.php" or absolute paths) from
+     * copying arbitrary server files into the user's draft area.
+     *
+     * @param string $path path relative to the file base, as found in the imported content
+     * @return bool true if the file is safe to import
+     */
+    protected function is_path_inside_filebase(string $path): bool
+    {
+    }
+    /**
      * Same as text_field but text is cleaned.
      * @param string $text text to parse and recode
      * @return array with keys text, format, itemid.
