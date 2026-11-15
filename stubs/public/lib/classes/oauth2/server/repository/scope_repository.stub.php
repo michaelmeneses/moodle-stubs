@@ -24,7 +24,7 @@ namespace core\oauth2\server\repository;
 
 use core\oauth2\server\entity\client_entity;
 use core\oauth2\server\entity\client_entity_interface;
-use core\router\scope\abstract_scope;
+use core\router\scope\scope_entity_interface;
 use League\OAuth2\Server\Entities\ClientEntityInterface;
 use League\OAuth2\Server\Entities\ScopeEntityInterface;
 use League\OAuth2\Server\Repositories\ScopeRepositoryInterface;
@@ -39,8 +39,19 @@ use League\OAuth2\Server\Repositories\ScopeRepositoryInterface;
  */
 class scope_repository implements ScopeRepositoryInterface
 {
+    /**
+     * Create an instance of the scope repository.
+     *
+     * @param \core\router\scope\util $scopeutil The scope utility instance.
+     */
+    public function __construct(
+        /** @var \core\router\scope\util The scope utility instance. */
+        private \core\router\scope\util $scopeutil
+    )
+    {
+    }
     #[\Override]
-    public function getScopeEntityByIdentifier(string $identifier): ?ScopeEntityInterface
+    public function getScopeEntityByIdentifier(string $identifier): ?scope_entity_interface
     {
     }
     #[\Override]
@@ -61,15 +72,6 @@ class scope_repository implements ScopeRepositoryInterface
      * @return array The map of scope identifiers to scope classes.
      */
     public function get_scope_map(): array
-    {
-    }
-    /**
-     * Determine if a class is abstract.
-     *
-     * @param string $classname The class name
-     * @return bool
-     */
-    private function is_abstract_class(string $classname): bool
     {
     }
 }

@@ -23,7 +23,6 @@
 namespace core\router\schema;
 
 use coding_exception;
-use core\oauth2\server\repository\scope_repository;
 use core\router\response\invalid_parameter_response;
 use core\router\response\not_found_response;
 use core\router\route;

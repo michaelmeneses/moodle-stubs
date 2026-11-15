@@ -57,6 +57,52 @@ class subscription implements \renderable, \templatable
     {
     }
     /**
+     * Get the lines from a multiline setting, splitting on any line ending as the app does.
+     *
+     * @param string $config raw setting value
+     * @return string[] lines, not trimmed
+     */
+    private static function get_lines(string $config): array
+    {
+    }
+    /**
+     * Normalise a language code so that "pt_br" and "pt-br" are considered the same language.
+     *
+     * @param string $lang language code
+     * @return string normalised language code
+     */
+    private static function normalise_lang(string $lang): string
+    {
+    }
+    /**
+     * Count the custom menu items as the app does, to be compared with the subscription limit.
+     *
+     * Each line follows the "label|url|type|lang" format and is ignored unless label, url and type are not empty.
+     * Lines with the same url and type (case insensitive) are translations of the same item.
+     *
+     * An item with at least one label not restricted to a language with "<lang>_only" is shown in every language.
+     * Otherwise, it is only shown in the languages of its labels. The count is the number of items shown in every
+     * language plus the highest number of language restricted items shown in a single language.
+     *
+     * @param string $menuitemsconfig raw setting value (one menu item per line)
+     * @return int number of custom menu items
+     */
+    private static function count_custom_menu_items(string $menuitemsconfig): int
+    {
+    }
+    /**
+     * Count the custom language strings as the app does, to be compared with the subscription limit.
+     *
+     * Each line follows the "id|string|lang" format and is ignored if it has less than 3 values. Duplicates are not
+     * removed. The limit applies per language, so the count is the highest number of strings in a single language.
+     *
+     * @param string $customlangstrings raw setting value (one language string per line)
+     * @return int number of custom language strings
+     */
+    private static function count_custom_lang_strings(string $customlangstrings): int
+    {
+    }
+    /**
      * Exports the data.
      *
      * @param \core\output\renderer_base $output

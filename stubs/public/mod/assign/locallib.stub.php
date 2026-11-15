@@ -694,6 +694,17 @@ class assign
     {
     }
     /**
+     * Does the primary grade item exist for this assign instance?
+     *
+     * It does not exist when the assignment has no grade and no feedback plugin writing to the
+     * gradebook, because grade_update() does not create a grade item of type GRADE_TYPE_NONE.
+     *
+     * @return bool true if the grade item exists
+     */
+    protected function has_grade_item(): bool
+    {
+    }
+    /**
      * Get the context of the current course.
      *
      * @return mixed context|null The course context

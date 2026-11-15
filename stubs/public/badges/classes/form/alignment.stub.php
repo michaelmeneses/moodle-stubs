@@ -23,7 +23,6 @@
 namespace core_badges\form;
 
 use moodleform;
-use stdClass;
 /**
  * Form to edit alignment.
  *

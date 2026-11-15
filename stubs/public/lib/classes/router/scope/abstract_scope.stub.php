@@ -32,9 +32,9 @@ use core\attribute_helper;
  * @copyright  2026 Mihail Geshoski <mihailgesoski@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-abstract class abstract_scope implements \League\OAuth2\Server\Entities\ScopeEntityInterface, \Stringable
+abstract class abstract_scope implements scope_entity_interface, \Stringable
 {
-    use \League\OAuth2\Server\Entities\Traits\ScopeTrait;
+    use scope_trait;
     #[\Override]
     final public function getIdentifier(): string
     {

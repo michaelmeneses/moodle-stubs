@@ -22,7 +22,6 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\form\oauth2\server;
 
-use core\oauth2\server\repository\scope_repository;
 use core\output\html_writer;
 use moodleform;
 /**
@@ -85,12 +84,12 @@ abstract class base_client_form extends moodleform
     /**
      * Create an instance of a client form.
      *
-     * @param scope_repository $scoperepository
+     * @param \core\router\scope\util $scopeutil
      * @param array $customdata
      */
     public function __construct(
-        /** @var scope_repository */
-        protected scope_repository $scoperepository,
+        /** @var \core\router\scope\util */
+        protected \core\router\scope\util $scopeutil,
         array $customdata = []
     )
     {

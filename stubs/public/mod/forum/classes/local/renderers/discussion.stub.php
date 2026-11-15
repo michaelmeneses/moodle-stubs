@@ -100,6 +100,8 @@ class discussion
     private $exportedpostsorter;
     /** @var callable $postprocessfortemplate Function to process exported posts before template rendering */
     private $postprocessfortemplate;
+    /** @var array|null $neighbours Previous/next discussion lookup result, see {@see self::get_neighbours()} */
+    private ?array $neighbours = null;
     /**
      * Constructor.
      *
@@ -194,6 +196,16 @@ class discussion
      * @return string
      */
     private function get_neighbour_links_html(): string
+    {
+    }
+    /**
+     * Get the previous and next discussions, looking them up only once per renderer instance.
+     *
+     * The lookup is expensive on large forums, so the result is cached.
+     *
+     * @return array An array with the 'prev' and 'next' keys, as returned by {@see forum_get_discussion_neighbours()}.
+     */
+    private function get_neighbours(): array
     {
     }
     /**
